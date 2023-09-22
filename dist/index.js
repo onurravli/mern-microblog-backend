@@ -9,7 +9,7 @@ const posts_router_1 = require("./routes/posts.router");
 const users_router_1 = require("./routes/users.router");
 const betty_1 = __importDefault(require("./utils/betty"));
 const app = (0, express_1.default)();
-const port = 3000;
+const port = process.env.PORT;
 app.get('/', (req, res) => {
     res
         .set('Content-Type', 'application/json')
