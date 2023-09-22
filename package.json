@@ -2,10 +2,8 @@
   "name": "mern-microblog-backend",
   "version": "1.0.0",
   "scripts": {
-    "serve": "node ./dist/index.js",
-    "start": "npm run serve",
-    "build": "tsc",
-    "dev": "nodemon --watch src --exec ts-node src/index.ts"
+    "start": "node dist/index.js",
+    "build": "tsc"
   },
   "dependencies": {
     "chalk": "^4.1.2",
