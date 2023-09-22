@@ -2,19 +2,8 @@
   "name": "mern-microblog-backend",
   "version": "1.0.0",
   "scripts": {
-    "prebuild": "rimraf dist",
     "build": "tsc",
-    "pre-prod": "rimraf dist && npm run build",
-    "dev": "nodemon --watch src --exec ts-node src/index.ts",
-    "predev": "npm run build",
-    "format": "prettier --write \"src/**/*.(js|ts)\"",
-    "lint": "eslint src --ext .js,.ts",
-    "lint:fix": "eslint src --fix --ext .js,.ts",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
+    "start": "node index.js"
   },
   "dependencies": {
     "@types/body-parser": "^1.19.2",
